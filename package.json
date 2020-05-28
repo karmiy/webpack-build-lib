@@ -1,0 +1,42 @@
+{
+  "name": "@kealm/build-lib",
+  "version": "0.0.1",
+  "description": "Use to build library",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --config build/webpack.dev.conf.js",
+    "build:lib": "webpack --progress --config build/webpack.lib.conf.js"
+  },
+  "keywords": [
+    "build",
+    "library",
+    "kealm",
+    "kmy"
+  ],
+  "author": "karmiy",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-modules-commonjs": "^7.9.6",
+    "@babel/plugin-transform-modules-umd": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "cross-env": "^5.2.0",
+    "happypack": "^5.0.1",
+    "html-webpack-plugin": "^4.3.0",
+    "resolve-url-loader": "^3.1.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2",
+    "webpack-merge": "^4.2.1"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "@babel/runtime": "^7.5.5",
+    "@babel/runtime-corejs3": "^7.7.7",
+    "core-js": "^3.2.0"
+  }
+}
